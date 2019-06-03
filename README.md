@@ -4,20 +4,19 @@ Code to go along with the [Raspberry Pi Controlled Irrigation System](http://www
 
 This code contains the script "run_sprinkler.py" which automatically runs an outside sprinkler 
 on a fixed schedule using a crontab.  The sprinkler will only run if there has been little to 
-no rain in the past 24 hours.  The script uses the Weather Underground API to estimate recent rainfall
+no rain in the past 24 hours.  The script uses the DarkSky API to estimate recent rainfall
 
 ## Requirements
 
-# no longer free-
-This project requires a free developer API key to Weather Underground.  Go here to register for one:
-
-https://www.wunderground.com/weather/api/d/pricing.html
-
-Select the "Anvil" plan so you gain access to the most features.  This process should give you an API key that look something like a string of numbers and letters, e.g. 3d42bd4e2f42a2eb.
-
- TO sign up for api at DARKSky
+This project requires a free developer API key to DARKSky  Go here to register for one:
  https://darksky.net/dev
- The API will look very similar to the one above from WU e.g. 9f9b6008cb4e7bc6f5ee5b53f274a
+
+
+
+This process should give you an API key that look something like a string of numbers and letters, e.g. 9f9b6008cb4e7bc6f5ee5b53f274a. 
+
+
+ 
 
 
 You'll also need the requests python module. These commands will get everything you'll need:   
@@ -44,7 +43,7 @@ cp config.sample config
 cp run.crontab.sample run.crontab
 ```
 
-Open `config` with your favorite text editor (nano, vim, emacs, etc..) and fill in your information to the right of each equal sign.  This is where you will paste the API key you obtained from Weather Underground above.
+Open `config` with your favorite text editor (nano, vim, emacs, etc..) and fill in your information to the right of each equal sign.  This is where you will paste the API key you obtained from DarkSKY above.
 
 ## Testing
 
