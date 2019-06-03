@@ -8,13 +8,12 @@ no rain in the past 24 hours.  The script uses the Weather Underground API to es
 
 ## Requirements
 
-## no longer free-This project requires a free developer API key to Weather Underground.  Go here to register for one:
+# no longer free-
+This project requires a free developer API key to Weather Underground.  Go here to register for one:
 
-## https://www.wunderground.com/weather/api/d/pricing.html
+https://www.wunderground.com/weather/api/d/pricing.html
 
-
-## Select the "Anvil" plan so you gain access to the most features.  This process should give you an API key that looks
-## something like a string of numbers and letters, e.g. 3d42bd4e2f42a2eb.
+Select the "Anvil" plan so you gain access to the most features.  This process should give you an API key that look something like a string of numbers and letters, e.g. 3d42bd4e2f42a2eb.
 
  TO sign up for api at DARKSky
  https://darksky.net/dev
