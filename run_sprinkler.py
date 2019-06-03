@@ -25,7 +25,7 @@ def load_config(filename='config'):
 # get_precip_in_window -- it will give a move accurate rainfall amount but it only 
 # measures rainfall since 12am local time.  Not helpful if it rained yesterday evening.
 def get_precip_today_in(config):
-  API_URL = 'http://api.wunderground.com/api/{key}/conditions/q/{state}/{town}.json'
+  API_URL = 'https://api.darksky.net/forecast/9f9b6008cb4e7bc6f5ee5b53f274ae83/51.1133,-113.9513'
   r = requests.get(API_URL.format(key=config['api_key'],
                                   state=config['state'],
                                   town=config['town']))
