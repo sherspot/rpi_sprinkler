@@ -3,15 +3,15 @@
 [SprinklerConfig] # don't edit this line
 ####
 ## Provide API key.  A free developer's API key is available
-# here: https://www.wunderground.com/weather/api/d/pricing.html
+# here: https://darksky.net/dev
 api_key = 
 
 ####
 ## Town and state where sprinkler is being run.  Cities 
 # with two or more words should use underscores for spaces, 
 # e.g. New_York
-town = Boston
-state = MA
+town = Calgary
+state = AB
 
 ####
 ## How long in minutes to run the sprinkler at a time
