@@ -8,12 +8,18 @@ no rain in the past 24 hours.  The script uses the Weather Underground API to es
 
 ## Requirements
 
-This project requires a free developer API key to Weather Underground.  Go here to register for one:
+## no longer free-This project requires a free developer API key to Weather Underground.  Go here to register for one:
 
-https://www.wunderground.com/weather/api/d/pricing.html
+## https://www.wunderground.com/weather/api/d/pricing.html
 
-Select the "Anvil" plan so you gain access to the most features.  This process should give you an API key that looks
-something like a string of numbers and letters, e.g. 3d42bd4e2f42a2eb.
+
+## Select the "Anvil" plan so you gain access to the most features.  This process should give you an API key that looks
+## something like a string of numbers and letters, e.g. 3d42bd4e2f42a2eb.
+
+ TO sign up for api at DARKSky
+ https://darksky.net/dev
+ The API will look very similar to the one above from WU e.g. 9f9b6008cb4e7bc6f5ee5b53f274a
+
 
 You'll also need the requests python module. These commands will get everything you'll need:   
 ```
@@ -28,7 +34,7 @@ sudo pip install requests
 Download or clone this repo onto your Raspberry pi.  These commands will put a `rpi_sprinkler` directory containing code under your home directory:
 ```
 cd $HOME
-git clone https://github.com/markveillette/rpi_sprinkler.git
+git clone https://github.com/sherspot/rpi_sprinkler
 cd rpi_sprinkler
 ```
 If you install the code somewhere else keep track of the location for the crontab file.
@@ -102,7 +108,7 @@ sudo crontab run.crontab
 ```
 and you should be all set.  Check the log file every now and then to monitor how things are going.  
 
-UPDATE (5/14/16):  I added a @reboot command on the last line of the crontab file that sets all GPIO pins used to GPIO.LOW when the pi restarts.  This was done to make sure the sprinkler doesn't run spontaneously if the pi accidentally reboots.  If you installed rpi_sprinker in a different spot, make sure the path to `run_sprinkler.py` matches on this line as well.
+UPDATE (5/14/16):  markveillette added a @reboot command on the last line of the crontab file that sets all GPIO pins used to GPIO.LOW when the pi restarts.  This was done to make sure the sprinkler doesn't run spontaneously if the pi accidentally reboots.  If you installed rpi_sprinker in a different spot, make sure the path to `run_sprinkler.py` matches on this line as well.
 
 If you restart the raspberry pi, the crontab should restart with it.  To check if it's running, enter
 ```
